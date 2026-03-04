@@ -1,0 +1,375 @@
+🎯 COMPLETE ADVANCED MASTER PROMPT
+
+(Copy this fully and use in AI tool to generate modular production-ready code)
+
+🎯 PROJECT TITLE
+
+Enterprise School Performance Analytics System (Streamlit + PostgreSQL)
+
+📌 OBJECTIVE
+
+Build a production-ready School Performance Analytics Web Application using:
+
+Python
+
+Streamlit
+
+Plotly
+
+Pandas
+
+NumPy
+
+PostgreSQL
+
+HTML & CSS
+
+The spreadsheet (CSV) is stored in PostgreSQL as normalized tables.
+
+The system must include:
+
+Signup
+
+Signin
+
+Login
+
+Role-based access
+
+Modular architecture
+
+Clean OOP design
+
+Advanced analytics features
+
+Professional UI
+
+🧠 1️⃣ REAL-LIFE SCHOOL PERFORMANCE FEATURES
+
+Include meaningful school metrics like real institutions use:
+
+🎓 Academic Performance Features
+Class-Level Metrics
+
+Average score by class (10th, 11th, 12th)
+
+Subject-wise average per class
+
+Section-wise performance comparison
+
+Pass percentage by class
+
+Top performing class
+
+Lowest performing subject
+
+Student-Level Metrics
+
+Student average across all subjects
+
+Student rank within class
+
+Student performance grade (A/B/C/D)
+
+Subject-wise weakness detection
+
+Performance improvement trend
+
+Subject consistency score
+
+Subject-Level Metrics
+
+Subject difficulty index
+
+Average score per subject
+
+Pass rate per subject
+
+Standard deviation per subject
+
+Teacher effectiveness index
+
+📊 Attendance & Discipline Features
+
+Attendance % per student
+
+Attendance % per class
+
+Late arrival frequency
+
+Chronic late identification
+
+Behavior vs marks correlation
+
+Attendance impact on performance
+
+⚠️ Risk & Attrition Features
+
+Dropout probability
+
+Low performance risk index
+
+High late risk flag
+
+Students below 40 marks
+
+Performance volatility detection
+
+Trend-based risk score
+
+📈 ACCURATE & RELATABLE CHARTS
+
+Use these charts for specific insights:
+
+Feature	            Chart Type
+Avg score by class	Grouped Bar Chart
+Subject performance	Horizontal Bar Chart
+Performance trend	Line Chart
+Attendance trend	Line Chart
+Marks distribution	Histogram (Average per student)
+Pass vs Fail	    Donut Chart
+Behavior vs Marks	Scatter with trendline
+Class comparison	Box Plot
+Risk indicator	    Gauge Chart
+Attrition trend	    Area Chart
+Teacher comparison	Clustered Bar Chart
+Monthly late	    Line Chart with markers
+Section performance	Heatmap
+
+Histogram must show:
+👉 Average Marks Per Student
+NOT individual subject scores.
+
+🔐 AUTHENTICATION SYSTEM
+
+Include:
+
+Signup Page
+
+Username
+
+Password (hashed)
+
+Role (Admin / Teacher)
+
+Store credentials in PostgreSQL
+
+Signin Page
+
+Validate credentials
+
+Session state management
+
+Role-Based Access
+
+Admin → Full dashboard
+
+Teacher → Only their subject data
+
+🏗 MODULAR STRUCTURE (MANDATORY)
+
+Split into 3 files:
+
+📁 main.py
+
+Responsibilities:
+
+App entry point
+
+Navigation routing
+
+Authentication handling
+
+Page switching
+
+Layout rendering
+
+Use class:
+
+class AppController:
+    def run(self):
+        pass
+📁 util.py
+
+Responsibilities:
+
+Database connection
+
+Data cleaning
+
+Feature engineering
+
+KPI calculations
+
+Risk scoring
+
+Data aggregation
+
+Authentication logic
+
+Use classes:
+
+class DatabaseManager:
+    def connect(self):
+    def fetch_data(self):
+    def insert_user(self):
+
+class DataProcessor:
+    def clean_data(self):
+    def calculate_attendance(self):
+    def calculate_risk_score(self):
+    def grade_student(self):
+📁 implementation.py
+
+Responsibilities:
+
+Plotly charts
+
+KPI cards
+
+Gauge charts
+
+Tables
+
+Layout functions
+
+Use class:
+
+class DashboardUI:
+    def render_kpis(self):
+    def render_charts(self):
+    def render_teacher_tab(self):
+    def render_risk_tab(self):
+🗄 POSTGRESQL DATABASE DESIGN: (Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:admin) This connection
+
+Schema:
+
+Create normalized tables:
+
+users
+
+students
+
+teachers
+
+subjects
+
+marks
+
+attendance
+
+attrition
+
+Include:
+
+Primary keys
+
+Foreign keys
+
+Proper joins
+
+Indexing for performance
+
+📊 CALCULATED METRICS REQUIRED
+
+Implement:
+
+overall_avg = marks.groupby(student_id).mean()
+
+attendance_rate = present / total
+
+late_rate = late / present
+
+attrition_rate = dropped / total
+
+pass_percentage
+
+teacher_effectiveness
+
+subject_difficulty_index
+
+risk_score formula combining:
+
+Low marks
+
+Low attendance
+
+High late
+
+Behavior
+
+🎨 UI/UX REQUIREMENTS
+
+Modern color palette
+
+Card layout
+
+Responsive columns
+
+Clean spacing
+
+Tooltips everywhere
+
+Gauge with legend
+
+Trend arrows in KPI
+
+Download filtered data button
+
+Optional dark mode toggle
+
+📌 ASSUMPTIONS
+
+Pass mark = 40
+
+Behavior scale = 1–10
+
+Late defined as late_flag = 1
+
+Attrition = no attendance for 30 days
+
+Attendance calculated monthly
+
+🧠 EXPECTED OUTPUT
+
+Generate:
+
+Clean folder structure
+
+Complete PostgreSQL schema
+
+Three-file modular architecture
+
+Classes & methods implementation
+
+Data cleaning logic
+
+Feature engineering
+
+Interactive Plotly dashboards
+
+Professional CSS
+
+ER diagram explanation
+
+Deployment steps
+
+💎 MAKE CODE:
+
+Beginner-friendly
+
+Well commented
+
+Modular
+
+Scalable
+
+Interview-ready
+
+Production structured
+
+🎯 END OF MASTER PROMPT
